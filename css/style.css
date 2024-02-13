@@ -87,6 +87,7 @@ Mainvisual
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 50px;
 }
 .a-link {
     display: flex;
@@ -117,7 +118,7 @@ Works
 -------------------------------------------*/
 #works ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -253,11 +254,21 @@ SP
   Works
   -------------------------------------------*/
   #works ul {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* ul 内のアイテムを中央揃えに */
   }
+  
   #works li {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* 子要素を縦方向に並べる */
+    align-items: center; /* 子要素（aタグとpタグ）を中央揃えに */
+    justify-content: center; /* 必要に応じて子要素を中央に配置 */
+    margin-bottom: 40px; /* 必要に応じて */
   }
+  
+  
 
   /*-------------------------------------------
   News

@@ -89,10 +89,11 @@ Mainvisual
 }
 .chara {
   display: flex;
+  margin-bottom: 40px;
 }
 .c_title {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .circle{
   margin-left: 50px;
@@ -156,20 +157,32 @@ About
 .motto {
   font-size: 18px;
 }
+.message {
+  line-height: 30px;
+}
 /*-------------------------------------------
 Works
 -------------------------------------------*/
 #works ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 #works li {
-  width: 31%;
+  width: 20%;
   margin-bottom: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
+.action a img {
+  position:relative;
+	top:0;
+}
+.action a img:hover {
+	top:-10px;
+	transition:0.3s;
+}
 /*-------------------------------------------
 News
 -------------------------------------------*/
