@@ -76,12 +76,66 @@ Mainvisual
 -------------------------------------------*/
 .profile {
   display: flex;
+  margin-bottom: 30px;
 }
 .me {
-  width: 50%;
+  width: 20%;
+}
+.me img {
+  border-radius:50%;
 }
 .me_text {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+.chara {
+  display: flex;
+}
+.c_title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.circle{
+  margin-left: 50px;
+  position: relative;
+  color: #333;
+  text-shadow: 0 0 2px white;
+}
+/* 未来志向 */
+.circle:nth-child(1)::before {
+  background: #ffd69d; /* 既存の色 */
+}
+
+/* 目標志向 */
+.circle:nth-child(2)::before {
+  background: #add8e6; /* 新しい色 */
+}
+
+/* 戦略性 */
+.circle:nth-child(3)::before {
+  background: #90ee90; /* 新しい色 */
+}
+
+/* 共感性 */
+.circle:nth-child(4)::before {
+  background: #ffb6c1; /* 新しい色 */
+}
+
+/* 最上志向 */
+.circle:nth-child(5)::before {
+  background: #ffa07a; /* 新しい色 */
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
 }
 /*-------------------------------------------
 About
@@ -227,18 +281,63 @@ SP
   /*-------------------------------------------
   main
   -------------------------------------------*/
-  .a-link {
+  .chara {
     display: flex;
-    width: 100%;
-    justify-content: end;
   }
-  .arrow {
-    width: 20%;
+  .c_title {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
-  .arrow_com{
-    font-size: 1.0rem;
+  .motto {
+    font-size: 12px;
   }
+.circle {
+  margin-left: 25px;
+  position: relative;
+  color: #333;
+  text-shadow: 0 0 2px white;
+  font-size: 12px;
+}
 
+/* 未来志向 */
+.circle:nth-child(1)::before {
+  background: #ffd69d; /* 既存の色 */
+}
+
+/* 目標志向 */
+.circle:nth-child(2)::before {
+  background: #add8e6; /* 新しい色 */
+}
+
+/* 戦略性 */
+.circle:nth-child(3)::before {
+  background: #90ee90; /* 新しい色 */
+}
+
+/* 共感性 */
+.circle:nth-child(4)::before {
+  background: #ffb6c1; /* 新しい色 */
+}
+
+/* 最上志向 */
+.circle:nth-child(5)::before {
+  background: #ffa07a; /* 新しい色 */
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+  
   /*-------------------------------------------
   Works
   -------------------------------------------*/
