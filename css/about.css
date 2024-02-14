@@ -183,64 +183,10 @@ Works
 	top:-10px;
 	transition:0.3s;
 }
-/*-------------------------------------------
-News
--------------------------------------------*/
-#news dl {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: solid 1px #c8c8c8;
-  margin-bottom: 20px;
-}
-#news dt {
-  width: 20%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
-}
-#news dd {
-  width: 80%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
-}
-
-/*-------------------------------------------
-Contact
--------------------------------------------*/
-#contact dl {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-#contact dt {
-  width: 15%;
-}
-#contact dd {
-  width: 85%;
-  margin-bottom: 10px;
-}
-#contact dd input,
-#contact dd textarea {
-  width: 100%;
-  border: solid 1px #c8c8c8;
-  padding: 10px;
-}
-#contact dd textarea {
-  height: 10rem;
-}
-#contact .button {
+.hobby {
   text-align: center;
 }
-#contact .button input {
-  width: 200px;
-  background-color: #24292e;
-  color: #fff;
-  padding: 15px 0;
-  border: solid 1px #24292e;
-}
-#contact .button input:hover {
-  background: #fff;
-  color: #24292e;
-}
+
 
 /*-------------------------------------------
 フッター
@@ -355,10 +301,16 @@ SP
   Works
   -------------------------------------------*/
   #works ul {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   #works li {
-    width: 100%;
+    width: 20%;
+    margin-bottom: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /*-------------------------------------------

@@ -126,10 +126,20 @@ Works
   width: 31%;
   margin-bottom: 23px;
 }
-
+#works li img {
+  position:relative;
+	top:0;
+}
+#works li img:hover {
+	top:-10px;
+	transition:0.3s;
+}
 /*-------------------------------------------
 News
 -------------------------------------------*/
+#news2 {
+  width: 70%;
+}
 #news dl {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +156,41 @@ News
   border-bottom: solid 1px #c8c8c8;
   padding: 15px;
 }
-
+#news2 dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news2 dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news2 dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+  text-align: center;
+}
+.w-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-bottom: dashed 1px #ed7429;
+}
+.sub-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.word {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: dashed 1px #ed7429;
+}
+.point {
+  color:#ed7429
+}
 /*-------------------------------------------
 Contact
 -------------------------------------------*/

@@ -126,7 +126,14 @@ Works
   width: 31%;
   margin-bottom: 23px;
 }
-
+#works li img {
+  position:relative;
+	top:0;
+}
+#works li img:hover {
+	top:-10px;
+	transition:0.3s;
+}
 /*-------------------------------------------
 News
 -------------------------------------------*/
